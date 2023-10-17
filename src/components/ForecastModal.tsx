@@ -14,6 +14,7 @@ const ForecastModal:FC<IForecastModal> = ({isOpen, setIsOpen, forecast}) => {
   console.log(isOpen)
   return (
     <div className={classes.modal} onClick={() => setIsOpen(false)} style={{display: isOpen ? 'flex' : "none"}}>
+      <div className={classes.exit}>X</div>
       <div className={classes.content}>
         {forecast.forecastday.map((day, indx) => 
           (<div key={day.date.toString()} className={classes.day}>

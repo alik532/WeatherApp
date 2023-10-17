@@ -26,7 +26,7 @@
 .day {
 	display: flex;
 	flex-direction: column;
-	gap: 2px;
+	gap: 0px;
 }
 
 .mainInfo {
@@ -45,17 +45,38 @@
 	width: 70px;
 }
 
+
+.exit {
+	cursor: pointer;
+	color: white;
+	position: fixed;
+	top: 0;
+	right: 0;
+	border: none;
+	width: 70px;
+	height: 70px;
+	background-color: rgba(255, 255, 255, 0.183);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.exit:hover {
+	background-color: rgba(255, 255, 255, 0.331);
+}
+
 .dayHeader {
 	font-weight: 100;
 	font-size: 22px;
 	width: max-content;
-	margin-left: 20px;
-	border-radius: 30px;
+	margin-left: 40px;
+	border-top-right-radius: 30px;
+	border-top-left-radius: 30px;
 	color: #FCFCFC;
 	width: fit-content;
 	height: fit-content;
-	padding: 8px 20px;
-	background: linear-gradient(var(--var-light-purple), var(--var-primary-purple))
+	padding: 10px 20px;
+	background: var(--var-primary-purple);
 }
 
 .dayContent {
@@ -66,7 +87,7 @@
 	padding: 10px 20px;
 	border-radius: 50px;
 	width: 83vw;
-	background: linear-gradient(120deg, var(--var-blue), var(--var-light-purple));
+	background: linear-gradient(120deg, var(--var-primary-purple), var(--var-light-purple));
 }
 
 .condition {

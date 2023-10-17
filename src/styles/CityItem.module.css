@@ -46,10 +46,10 @@
 @media (orientation: landscape) {
 	.item {
 		height: 80px;
-		width: 240px; 
+		width: auto; 
 		gap: 20px;
 		border-radius: 90px;
-		padding-left: 20px;
+		padding-left: 75px;
 	}
 	.item:first-child {
 		margin-left: 40px;

@@ -11,7 +11,7 @@ interface ICityItem {
 
 const CityItem:FC<ICityItem> = ({name, status, icon, temprature, isPicked}) => {
   return (
-	<div className={classes.item} style={isPicked ? {border: "2px yellow solid", color: "yellow"} : {}}>
+	<div className={classes.item} style={isPicked ? {border: "2px yellow solid", color: "yellow"}: {}}>
 		<img className={classes.icon} src={icon} alt="" />
 		<div className={classes.data}>
 			<h2 className={classes.city}>{name}</h2>
