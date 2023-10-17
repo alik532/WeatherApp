@@ -15,6 +15,7 @@
 }
 
 .content {
+	animation: showup .5s 1;
 	gap: 20px;
 	display: flex;
 	flex-direction: column;
@@ -29,14 +30,15 @@
 }
 
 .mainInfo {
-	gap: 10px;
+	gap: 2px;
 	display: flex;
 	align-items: center;
 }
 
 .temp {
+	width: max-content;
 	font-weight: 100;
-	font-size: 34px;
+	font-size: 28px;
 }
 
 .icon {
@@ -45,14 +47,14 @@
 
 .dayHeader {
 	font-weight: 100;
-	font-size: 34px;
+	font-size: 22px;
 	width: max-content;
 	margin-left: 20px;
 	border-radius: 30px;
 	color: #FCFCFC;
-	height: 30px;
-	width: 300px;
-	padding: 15px;
+	width: fit-content;
+	height: fit-content;
+	padding: 8px 20px;
 	background: linear-gradient(var(--var-light-purple), var(--var-primary-purple))
 }
 
@@ -61,15 +63,15 @@
 	flex-direction: column;
 	gap: 4px;
 	align-items: flex-start;
-	padding: 15px 30px;
+	padding: 10px 20px;
 	border-radius: 50px;
-	width: 400px;
+	width: 83vw;
 	background: linear-gradient(120deg, var(--var-blue), var(--var-light-purple));
 }
 
 .condition {
 	font-weight: 200;
-	font-size: 24px;
+	font-size: 17px;
 }
 
 .additionalInfo {
@@ -87,4 +89,27 @@
 	display: flex;
 	align-items: center;
 	font-weight: 900;
+}
+
+@media (orientation: landscape) {
+
+	.dayHeader {
+		height: 30px;
+		width: 300px;
+	}
+	.dayContent {
+		width: 400px;
+	}
+}
+
+
+@keyframes showup {
+	from {
+		filter: opacity(0);
+		transform: translateY(-100px);
+	}
+	to {
+		filter: opacity(1);
+		transform: translateY(0px);
+	}
 }

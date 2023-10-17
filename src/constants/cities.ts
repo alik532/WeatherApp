@@ -38,7 +38,6 @@ export enum Cities {
 	Stockholm="Stockholm",
 	Amsterdam="Amsterdam",
 	Milan="Milan",
-	Aurangābād="Aurangābād",
 	Copenhagen="Copenhagen",
 	Santiago="Santiago",
 	Prague="Prague",

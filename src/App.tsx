@@ -58,12 +58,12 @@ function App() {
                 <h4 className='metric_name'>Wind speed</h4>
               </div>
               <div className='metric'>
-                <Humidity size={70}/>
+                <Humidity size={60}/>
                 <h2 className='metric_value'>{currentCityForecast.current.humidity+" %"}</h2>
                 <h4 className='metric_name'>Humidity</h4>
               </div>
               <div className='metric'>
-                <Vision size={70}/>
+                <Vision size={60}/>
                 <h2 className='metric_value'>{currentCityForecast.current.vis_km+" km"}</h2>
                 <h4 className='metric_name'>Vision</h4>
               </div>

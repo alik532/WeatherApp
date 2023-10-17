@@ -47,7 +47,7 @@
 
 .temp {
 	z-index: 1;
-	font-size: 1000%;
+	font-size: 800%;
 	font-weight: 900; /* Adjust the font size as needed */
     background: -webkit-linear-gradient(var(--var-background-white), var(--var-blue));
 	-webkit-background-clip: text;
@@ -59,7 +59,7 @@
 
 .main_panel {
 	align-self: center;
-	padding: 30px;
+	padding: 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -125,7 +125,7 @@
 }
 
 .metric_icon {
-	height: 70px;
+	height: 60px;
 }
 
 .today {
