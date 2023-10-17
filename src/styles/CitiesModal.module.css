@@ -1,0 +1,52 @@
+.modal {
+	backdrop-filter: blur(5px);
+	background-color: rgba(0, 0, 0, 0.597);
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow-y: scroll;
+}
+
+.content {
+	margin-top: 600px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 20px;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.city {
+	border: 2px var(--var-blue) solid;
+	transition: .2s;
+	padding-left: 20px;
+	font-size: 30px;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	border-radius: 40px;
+	width: 300px;
+	height: 80px;
+	background: linear-gradient(45deg, var(--var-primary-purple), var(--var-blue));
+}
+
+.city:hover {
+	cursor: pointer;
+	border: 2px yellow solid;
+	color: yellow;
+}
+
+@media (orientation: landscape) {
+	.content {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}

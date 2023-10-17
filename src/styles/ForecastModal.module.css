@@ -1,0 +1,90 @@
+.modal {
+	backdrop-filter: blur(5px);
+	stroke: yellow !important;
+	background-color: rgba(0, 0, 0, 0.597);
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	color: #FCFCFC;
+	justify-content: center;
+}
+
+.content {
+	gap: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.day {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.mainInfo {
+	gap: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.temp {
+	font-weight: 100;
+	font-size: 34px;
+}
+
+.icon {
+	width: 70px;
+}
+
+.dayHeader {
+	font-weight: 100;
+	font-size: 34px;
+	width: max-content;
+	margin-left: 20px;
+	border-radius: 30px;
+	color: #FCFCFC;
+	height: 30px;
+	width: 300px;
+	padding: 15px;
+	background: linear-gradient(var(--var-light-purple), var(--var-primary-purple))
+}
+
+.dayContent {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	align-items: flex-start;
+	padding: 15px 30px;
+	border-radius: 50px;
+	width: 400px;
+	background: linear-gradient(120deg, var(--var-blue), var(--var-light-purple));
+}
+
+.condition {
+	font-weight: 200;
+	font-size: 24px;
+}
+
+.additionalInfo {
+	display: flex;
+	color: #ffe500;
+	gap: 16px;
+}
+
+.date {
+	font-weight: 100;
+}
+
+.avgInfo {
+	gap: 8px;
+	display: flex;
+	align-items: center;
+	font-weight: 900;
+}
